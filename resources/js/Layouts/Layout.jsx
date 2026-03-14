@@ -1,23 +1,12 @@
-import { Link } from "@inertiajs/react";
+import Navbar from "../Components/Navbar";
 
 export default function Layout({ children }) {
-
-  return (
-    <>
-
-      <header className="py-6">
-        <div className="max-w-5xl mx-auto">
-          <nav className="flex justify-between items-center">
-            <Link href="/" className="text-2xl font-bold text-green-600">Home</Link>
-            <Link href="/create">Create</Link>
-          </nav>
+    return (
+        <div className="min-h-screen bg-white">
+            <Navbar />
+            <main>
+                {children}
+            </main>
         </div>
-      </header>
-
-      <main>
-        {children}
-      </main>
-
-    </>
-  )
+    );
 }
