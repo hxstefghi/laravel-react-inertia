@@ -54,8 +54,10 @@ export default function Home({ name }) {
 
                     {/* Subheadline */}
                     <p className="max-w-xl mx-auto text-lg text-gray-500 leading-relaxed mb-10">
-                        A minimal, fast blogging platform built for creators who care about the words,
-                        not the tools. Start writing in seconds.
+                        {/* A minimal, fast blogging platform built for creators who care about the words,
+                        not the tools. Start writing in seconds. */}
+
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sed aliquid magnam animi cum quam voluptatibus, atque cumque praesentium pariatur.
                     </p>
 
                     {/* CTA Buttons */}

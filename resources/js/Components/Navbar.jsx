@@ -40,6 +40,12 @@ export default function Navbar() {
                             About
                         </Link>
                         <Link
+                            href="/contact"
+                            className="px-4 py-2 text-sm font-medium text-gray-600 rounded-lg hover:text-gray-900 hover:bg-gray-100 transition-all duration-200"
+                        >
+                            Contact
+                        </Link>
+                        <Link
                             href="/create"
                             className="ml-2 px-4 py-2 text-sm font-semibold text-white bg-gray-900 rounded-lg hover:bg-gray-700 transition-all duration-200 shadow-sm"
                         >
@@ -88,6 +94,13 @@ export default function Navbar() {
                             className="px-4 py-2.5 text-sm font-medium text-gray-600 rounded-lg hover:text-gray-900 hover:bg-gray-100 transition-all duration-200"
                         >
                             About
+                        </Link>
+                        <Link
+                            href="/contact"
+                            onClick={() => setMenuOpen(false)}
+                            className="px-4 py-2.5 text-sm font-medium text-gray-600 rounded-lg hover:text-gray-900 hover:bg-gray-100 transition-all duration-200"
+                        >
+                            Contact
                         </Link>
                         <Link
                             href="/create"

@@ -10,6 +10,10 @@ Route::get('/about', function () {
     return inertia('About');
 });
 
+Route::get('/contact', function () {
+    return inertia('Contact');
+});
+
 Route::resource('/posts', PostController::class)->except('index');
 
 // Route::get('/', function () {
