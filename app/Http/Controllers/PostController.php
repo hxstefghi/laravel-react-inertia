@@ -26,13 +26,21 @@ class PostController extends Controller
     }
 
     /**
+     * Show the form for creating a new resource.
+     */
+    public function create()
+    {
+        return inertia('Create');
+    }
+
+    /**
      * Store a newly created resource in storage.
      */
     public function store(StorePostRequest $request)
     {
         $this->postService->createPost($request->validated());
 
-        return redirect()->back()->with('success', 'Post created successfully.');
+        return redirect('/')->with('success', 'Post created successfully.');
     }
 
     /**
