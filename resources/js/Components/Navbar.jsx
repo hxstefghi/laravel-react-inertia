@@ -28,12 +28,6 @@ export default function Navbar() {
                             Home
                         </Link>
                         <Link
-                            href="/posts"
-                            className="px-4 py-2 text-sm font-medium text-gray-600 rounded-lg hover:text-gray-900 hover:bg-gray-100 transition-all duration-200"
-                        >
-                            Posts
-                        </Link>
-                        <Link
                             href="/about"
                             className="px-4 py-2 text-sm font-medium text-gray-600 rounded-lg hover:text-gray-900 hover:bg-gray-100 transition-all duration-200"
                         >
@@ -46,7 +40,7 @@ export default function Navbar() {
                             Contact
                         </Link>
                         <Link
-                            href="/create"
+                            href="/posts/create"
                             className="ml-2 px-4 py-2 text-sm font-semibold text-white bg-gray-900 rounded-lg hover:bg-gray-700 transition-all duration-200 shadow-sm"
                         >
                             New Post
@@ -82,13 +76,6 @@ export default function Navbar() {
                             Home
                         </Link>
                         <Link
-                            href="/posts"
-                            onClick={() => setMenuOpen(false)}
-                            className="px-4 py-2.5 text-sm font-medium text-gray-600 rounded-lg hover:text-gray-900 hover:bg-gray-100 transition-all duration-200"
-                        >
-                            Posts
-                        </Link>
-                        <Link
                             href="/about"
                             onClick={() => setMenuOpen(false)}
                             className="px-4 py-2.5 text-sm font-medium text-gray-600 rounded-lg hover:text-gray-900 hover:bg-gray-100 transition-all duration-200"
@@ -103,7 +90,7 @@ export default function Navbar() {
                             Contact
                         </Link>
                         <Link
-                            href="/create"
+                            href="/posts/create"
                             onClick={() => setMenuOpen(false)}
                             className="mt-1 px-4 py-2.5 text-sm font-semibold text-white bg-gray-900 rounded-lg hover:bg-gray-700 transition-all duration-200 text-center"
                         >

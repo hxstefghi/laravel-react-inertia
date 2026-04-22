@@ -10,9 +10,9 @@ class PostService
     /**
      * Get all posts, ordered by latest.
      */
-    public function getAllPosts(): Collection
+    public function getAllPosts()
     {
-        return Post::latest()->get();
+        return Post::latest()->paginate(5);
     }
 
     /**
